@@ -480,19 +480,19 @@
         switch (sepCommand) {
             case 0: //区切り文字より前を置換
                 range = [orgName rangeOfString:separator];
-                newName = [NSMutableString stringWithFormat:@"%@%@",replaceStr,[newName substringFromIndex:range.location]];
+                newName = [NSMutableString stringWithFormat:@"%@%@",replaceStr,[orgName substringFromIndex:range.location]];
                 break;
             case 1: //区切り文字より後ろを置換
                 range = [orgName rangeOfString:separator options:NSBackwardsSearch];
-                newName = [NSMutableString stringWithFormat:@"%@%@",[newName substringToIndex:range.location+1],replaceStr];
+                newName = [NSMutableString stringWithFormat:@"%@%@",[orgName substringToIndex:range.location+1],replaceStr];
                 break;
             case 2: //区切り文字より前を削除
                 range = [orgName rangeOfString:separator];
-                newName = [NSMutableString stringWithString:[newName substringFromIndex:range.location+1]];
+                newName = [NSMutableString stringWithString:[orgName substringFromIndex:range.location+1]];
                 break;
             default: //区切り文字より後ろを削除
                 range = [orgName rangeOfString:separator options:NSBackwardsSearch];
-                newName = [NSMutableString stringWithString:[newName substringToIndex:range.location]];
+                newName = [NSMutableString stringWithString:[orgName substringToIndex:range.location]];
                 break;
         }
     }
