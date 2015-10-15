@@ -3363,7 +3363,7 @@ DQ
         <window title="GeneralDialog" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="NCl-rr-zYT" customClass="CCSheetWin">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="109" y="661" width="460" height="120"/>
+            <rect key="contentRect" x="109" y="680" width="460" height="120"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
             <value key="maxSize" type="size" width="460" height="120"/>
             <view key="contentView" id="zBn-6l-pU9">
@@ -3438,6 +3438,7 @@ Gw
                 </subviews>
                 <animations/>
             </view>
+            <point key="canvasLocation" x="189" y="294"/>
         </window>
         <window title="日付フォーマット記述子一覧" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="I15-SB-kRA" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" utility="YES"/>
